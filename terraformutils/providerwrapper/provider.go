@@ -371,3 +371,4 @@ func GetProviderSource(providerName string) string {
 			return ""
 	}
 	return "integrations/github" 
+}
