@@ -34,7 +34,7 @@ func OutputHclFiles(resources []terraformutils.Resource, provider terraformutils
 	providerData["terraform"] = map[string]interface{}{
 		"required_providers": []map[string]interface{}{{
 			provider.GetName(): map[string]interface{}{
-				"version": providerwrapper.GetProviderVersion(provider.GetName()),
+				"source": providerwrapper.GetProviderSource(provider.GetName()),
 			},
 		}},
 	}
